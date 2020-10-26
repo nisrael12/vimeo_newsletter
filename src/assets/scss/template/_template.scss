@@ -5,55 +5,287 @@
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  background: white !important;
+  font-family: 'helvetica neue',helvetica,arial,sans-serif !important;
+  hyphens: none !important;
+
+  span{
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    color: #a3abb0;
+  }
+
+  h2{
+    font-weight: 600 !important;    
+  }
+
+  
 }
 
-.container.header {
-  background: #f3f3f3;
+.header{
+  
+  .logo{
+    width: 120px;
+  }
+
+  span, p, h2{
+    text-align: center;
+  }
+
+  h2{
+    width: 70%;
+    font-size: 40px;
+    hyphens: none !important;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 100% !important;
+      font-size: 25px !important;
+    }
+  }
+
+  p{
+    width: 80% !important;
+    line-height: 1.5;
+    hyphens: none !important;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 100% !important;
+      font-size: 10px !important;
+    }
+  }
+
+  a{
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+      font-size: 12px !important;
+    }
+  }
+
+  span{
+    font-size: 12px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 100% !important;
+      font-size: 10px !important;
+    }
+  }
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
+
+.content{
+  vertical-align: middle !important;
+
+  .video-marketing{
+
+    img{
+      width: 100% !important;
+    }
+    .columns{
+      vertical-align: middle !important;
+      padding: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        vertical-align: middle !important;
+        }
+    }
+  
+    .one{
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        border-top: 20px solid #f8f9fd !important;
+        border-bottom: 20px solid #f8f9fd;
+        }
+    }
+    .two{
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        border-bottom: 20px solid #f8f9fd;
+        }
+    }
+    .three{
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        border-bottom: 20px solid #f8f9fd;
+        }
+    }
+    .four{
+      h3{
+          hyphens: none;
+        }
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        border-bottom: 20px solid #f8f9fd;
+        }
+    }
+    .text{
+      padding-left: 10px !important;
+      vertical-align: middle !important;
+      
+  
+      h3{
+        font-size: 30px; 
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          width: 100%;
+          font-size: 16px !important;
+          hyphens: none;
+        }
+      }
+
+      p{
+        width: 85% !important;
+        line-height: 1.5;
+  
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          width: 100%;
+          font-size: 10px !important;
+        }
+      }
+  
+      span{
+        font-size: 10px !important;
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          width: 100%;
+          font-size: 8px !important;
+        }
+      }
+    }
+
+  }
+
+  .staff{
+
+    h3, p{
+      text-align: center;
+      hyphens: none;
+    }
+
+    h3{
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 100%;
+        font-size: 16px !important;
+        hyphens: none;
+      }
+    }
+
+    p{
+      width: 80% !important;
+      line-height: 1.5;
+      hyphens: none !important;
+  
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 100% !important;
+        font-size: 10px !important;
+      }
+    }
+
+    a{
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        
+        font-size: 12px !important;
+      }
+    }
+  }
 }
 
-// Full Width Headers
-.header {
-  background: #8a8a8a;
+.footer{
+  background: #f8f9fd !important;
+  background-color: #f8f9fd !important;
+  .social{
+    padding-bottom: 0;
+    padding-top: 0;
+    a{
+      display: inline-block;
+      width: 25px !important;
+      padding-left: 7px;
+      padding-right: 7px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 15px !important;
+        padding-left: 3px !important;
+        padding-right: 3px;
+        }
+    }
+  }
+  .links{
+
+    a{
+      display: inline-block;
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 600 !important;
+      color: #586876;
+      padding-left: 7px;
+      padding-right: 7px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 6px !important;
+        padding-left: 4px;
+        padding-right: 4px;
+        }
+    }
+  }
+  .text{
+    padding-top: 0;
+    padding-bottom: 0;
+
+    a{
+      display: inline-block;
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 600 !important;
+      color: #586876;
+      padding-left: 7px;
+      padding-right: 7px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 6px !important;
+        padding-left: 4px;
+        padding-right: 4px;
+        }
+    }
+
+    p{
+      font-size: 10px;
+      text-align: center;
+      width: 90%;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 6px !important;
+        text-align: center;
+        width: 90%;
+        }
+    }
+
+    span{
+      font-size: 10px;
+      color: black;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 6px !important;
+        text-align: center;
+        width: 90%;
+        color: black;
+        }
+    }
+  }
+  .terms{
+    padding-top: 0;
+    padding-bottom: 10px !important;
+
+    a{
+      display: inline-block;
+      font-size: 10px;
+      text-decoration: none;
+      font-weight: 600 !important;
+      color: #586876;
+      padding-left: 5px;
+      padding-right: 5px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 6px !important;
+        padding-left: 4px;
+        padding-right: 4px;
+        }
+    }
+  }
 }
 
-.header .columns {
-  padding-bottom: 0;
-}
-
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
-
-.header .wrapper-inner {
-  padding: 20px;
-}
-
-.header .container {
-  background: transparent;
-}
-
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
-
-.wrapper.secondary {
-  background: #f3f3f3;
-}
